@@ -1,17 +1,17 @@
 import React from 'react';
 import { connect } from 'dva';
 
-import Header from '@/layouts/BasicLayout/Header';
-import Footer from '@/layouts/BasicLayout/Footer';
+import Header from '@/layouts/BasicLayout/components/Header';
+import Footer from '@/layouts/BasicLayout/components/Footer';
 
 function BasicLayout(props) {
   return (
     <React.Fragment>
       <Header/>
-      <div style={{ 'flex-grow': 1 }}>
+      <div style={{ flexGrow: 1 }}>
         {props.children}
       </div>
-      <div style={{ flexGrow: 1 }}>{props.name}</div>
+      {/*<div style={{ flexGrow: 1 }}>{props.name}</div>*/}
       <Footer/>
     </React.Fragment>
   );
@@ -21,3 +21,4 @@ function BasicLayout(props) {
 export default connect(({ menu: menuModel }) => ({
   name: menuModel.name,
 }))(BasicLayout);
+

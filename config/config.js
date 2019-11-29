@@ -1,14 +1,5 @@
 export default {
   treeShaking: true,
-  // routes: [
-  //   {
-  //     path: '/',
-  //     component: '../layouts/index',
-  //     routes: [
-  //       { path: '/', component: '../pages/index' },
-  //     ],
-  //   },
-  // ],
   plugins: [
     ['umi-plugin-react', {
       antd: false,
