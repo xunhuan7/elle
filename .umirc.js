@@ -1,25 +1,23 @@
-
-// ref: https://umijs.org/config/
 export default {
   treeShaking: true,
-  routes: [
-    {
-      path: '/',
-      component: '../layouts/index',
-      routes: [
-        { path: '/', component: '../pages/index' }
-      ]
-    }
-  ],
+  // routes: [
+  //   {
+  //     path: '/',
+  //     component: '../layouts/index',
+  //     routes: [
+  //       { path: '/', component: '../pages/index' },
+  //     ],
+  //   },
+  // ],
   plugins: [
-    // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
       antd: false,
-      dva: true,
+      dva: {
+        immer: true,
+      },
       dynamicImport: false,
-      title: 'elle',
       dll: false,
-      
+
       routes: {
         exclude: [
           /models\//,
@@ -29,6 +27,11 @@ export default {
           /components\//,
         ],
       },
+      headScripts: [],
+      metas: [{ charset: 'utf-8' }],
+      links: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Averia+Sans+Libre&display=swap' },
+      ],
     }],
   ],
-}
+};

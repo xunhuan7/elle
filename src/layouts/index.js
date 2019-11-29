@@ -1,12 +1,8 @@
-import styles from './index.css';
+import React from 'react';
+import BasicLayout from '@/layouts/BasicLayout';
 
-function BasicLayout(props) {
-  return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to umi!</h1>
-      {props.children}
-    </div>
-  );
+function Index(props) {
+  return <BasicLayout/>;
 }
 
-export default BasicLayout;
+export default Index;
