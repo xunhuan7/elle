@@ -1,3 +1,7 @@
+/**
+ * title: 首页
+ */
+
 import React from 'react';
 
 class Index extends React.Component {

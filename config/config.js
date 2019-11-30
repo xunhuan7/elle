@@ -8,7 +8,6 @@ export default {
       },
       dynamicImport: false,
       dll: false,
-
       routes: {
         exclude: [
           /models\//,
@@ -18,6 +17,7 @@ export default {
           /components\//,
         ],
       },
+      title: 'Default Title',
       headScripts: [],
       metas: [{ charset: 'utf-8' }],
       links: [
