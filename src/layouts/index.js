@@ -1,8 +1,19 @@
 import React from 'react';
+
 import BasicLayout from '@/layouts/BasicLayout';
 
-function Index(props) {
-  return <BasicLayout {...props}/>;
+class Layout extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <BasicLayout {...this.props}/>
+    );
+  }
+
 }
 
-export default Index;
+export default Layout;

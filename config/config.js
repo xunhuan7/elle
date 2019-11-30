@@ -22,6 +22,8 @@ export default {
       metas: [{ charset: 'utf-8' }],
       links: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Averia+Sans+Libre&display=swap' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=PT+Sans&display=swap' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap' },
       ],
     }],
   ],

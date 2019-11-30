@@ -1,5 +1,5 @@
 export default {
-  namespace: 'menu',
+  namespace: 'blog',
 
   state: {
     name: 'Jayden Deng',
